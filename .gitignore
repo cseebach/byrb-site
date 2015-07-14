@@ -1,2 +1,4 @@
-_site/
-.sass-cache/
+root/_site/
+root/.sass-cache/
+.divshot-cache
+*~
