@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "redirect.js",
+  "sourceRoot": "",
+  "sources": [
+    "redirect.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,EAAA,IAAG,MAAM,CAAC,QAAQ,CAAC,QAAhB,KAA4B,oBAA/B;AACE,IAAA,MAAM,CAAC,QAAP,GAAkB,2BAAlB,CADF;GAAA;AAAA"
+}

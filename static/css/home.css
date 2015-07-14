@@ -1,0 +1,292 @@
+.black-text {
+    color: #000;
+}
+
+.fix-margins {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.under-image img {
+    padding: 0;
+    margin: 0;
+}
+
+.under-text div {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: 4px;
+}
+
+.under-text p {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 4px 0 0;
+    color: #aaa;
+}
+
+.under-text h2 {
+    /*padding: 0px;*/
+    margin: -3px -2px -3px;
+    /*border-bottom: 1px solid #000;*/
+    color: #aaa;
+}
+
+.under-text h2 a{
+    font-family: league_gothicregular;
+    color: #aaa;
+}
+
+.yellow-text a{
+    color: #ffcd00;
+    font-family: league_gothicregular;
+    text-decoration: underline;
+}
+
+.video-of-the-week {
+    margin-left: 20px;
+}
+
+.video-of-the-week h1 {
+    font-size: 3em;
+    margin: 5px;
+    padding: 0;
+}
+
+.video-of-the-week h2 {
+    font-size: 1.7em;
+    margin: 5px;
+    padding: 0 0 16px;
+}
+
+.video-of-the-week p {
+    font-size: 17px;
+    font-family: 'Open Sans',  sans-serif;
+}
+
+.video-of-the-week video {
+    padding-bottom: 10px;
+}
+
+.video-of-the-week a{
+    /*text-shadow: 1px 1px 2px #000;*/
+    font-family: AlternateGothicLT-No3;
+    font-size: 20px;
+}
+
+.video-of-the-week .banner{
+    margin-bottom: 30px;
+}
+
+.post {
+    padding-top: 0;
+}
+
+.big-ad {
+    margin: 0 20px 0 0;
+    padding: 16px 0 75px;
+    text-align: center;
+    color: #aaa;
+}
+
+.big-ad img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.big-ad h1, .big-ad h2 {
+    font-family: 'Open Sans';
+    font-weight: bold;
+    margin: 5px;
+    text-align: center;
+}
+
+.big-ad h2 {
+    font-size: 2em;
+    padding-bottom: 3px;
+}
+
+.big-ad h3 {
+    font-size: 1.5em;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+.big-ad table a {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-family: IndustryInc-Base;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 1px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    background: rgb(0, 0, 0) linear-gradient(rgb(30, 30, 30), rgb(0, 0, 0)) repeat-x 0 -15px;
+    border-collapse: separate;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.0980392);
+    border-bottom-color: rgba(0, 0, 0, 0.247059);
+    box-shadow: rgba(2, 138, 222, 1) 0px 1px 0px 0px inset, rgba(2, 138, 222, 1) 0px 1px 2px 0px;
+}
+
+.big-ad a:hover {
+    box-shadow: 2px 2px 5px #000;
+}
+
+.big-ad table {
+    /*width: 100%;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 7px;
+    border-collapse: separate;
+}
+
+.big-ad td{
+    width: 33%;
+}
+    
+.big-ad p {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.tagline {
+    margin-top: 2.7em;
+    /*margin-left: -15px;*/
+    /*margin-right: -45px;*/
+    padding-bottom: 4px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.96);
+}
+
+.tagline p {
+    font-family: IndustryInc-Base;
+    font-size: 2.35em;
+    color: #ccc;
+    text-shadow: #028ade 1px 1px 0;
+}
+
+.tagline em {
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.tagline strong {
+    font-style: normal;
+    text-shadow: 2px 2px #444;
+}
+
+.border-bottom {
+/*     border-image: url("//byrb.s3.amazonaws.com/static/img/border.png") 1 1 stretch; */
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+    border-width: 0;
+    border-bottom-width: 2px;
+    padding: 18px 0;
+}
+
+.padding-top {
+    padding-top: 36px;
+}
+
+.carousel-inner {
+    border-radius: 0;
+}
+
+#myCarousel{
+    /*margin-top: 7px;*/
+    /*padding-right: 0px;*/
+}
+
+.carousel-inner .item img{
+    margin: 0;
+    width: 100%;
+}
+
+.carousel-control{
+    border-radius: 0;
+}
+
+.no-column-padding{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.banner{
+    width: 100%;
+    background-color: rgba(255,255,255,0.3);
+    padding: .5em 0 .5em;
+    text-align: center;
+}
+
+.rounded {
+    margin: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    padding: 24px;
+}
+
+.rounded h1, .rounded h2, .rounded h3, .rounded h4, .rounded h5, .rounded h6, .rounded p {
+    color: #eee;
+}
+
+.container.content{
+    box-shadow: 0px 0px 10px #000;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 7px;
+}
+
+.contact-button{
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 0 none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: bold;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 5px 10px 0;
+  padding: 15px 50px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.inverse{
+  color: #FFF;
+}
+
+.construction-bg{
+    background: url("/static/img/construction.jpg") repeat center;
+}
+
+.black-bg{
+    background-color: #000;
+}
+
+.padding-bottom{
+    padding-bottom: 15px;
+}

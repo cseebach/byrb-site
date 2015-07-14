@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load at_size from images %}
+{% load mrkdwn %}
+
+{% block extra_css %}
+    <link href="{{ STATIC_URL }}css/coaching.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/comingsoon.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/programs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nova+Square|Audiowide|Roboto">
+{% endblock %}
+
+{% block title %}The Running Corps - Training Programs{% endblock %}
+
+{% block content %}
+    <div class="about-paragraph black-bg">
+        <div class="row">
+            <div class="col-xs-12">
+            	<h4 class="text-xl text-center fancy shadowed blue">{{ program.name }} - ${{ program.price }}</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-1">
+                <div class="rounded black-bg three-d-hover margin-bottom">
+                	<div class="program-copy">
+                        {{program.copy | mrkdwn}}
+                    </div>
+
+                    <div class="spacer-xs"></div>
+                    <img src="{{ program.image|at_size:'1150x500' }}" class="img-responsive">
+                    <div class="spacer-xs"></div>
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div class="gray blue-top subheading">
+                            	{{program.subheading_1|mrkdwn}}
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="gray blue-top subheading">
+                            	{{program.subheading_2|mrkdwn}}
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="gray yellow-top subheading">
+                            	{{program.subheading_3|mrkdwn}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spacer-m"></div>
+                    {% if program.post_copy.strip %}
+                        <div class="program-copy">
+                            {{program.post_copy | mrkdwn}}
+                        </div>
+                    {% else %}
+                        <div class="row">
+                            <div class="col-xs-12"><p class="text-center"><a
+                                    {% if not program.coming_soon %}
+                                        href="/programs/order/{{ program.program_base.slug }}/{{ program.slug }}"
+                                    {% endif %}
+                                    class="black-bg btn-fat">
+                                {% if program.coming_soon %}
+                                    Coming Soon
+                                {% else %}
+                                    Purchase
+                                {% endif %}
+                            </a></p></div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

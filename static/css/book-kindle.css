@@ -1,0 +1,109 @@
+.about-paragraph {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px 0;
+    margin: 7px 0;
+    box-shadow: 5px 5px 5px #000;
+    color: #111;
+}
+
+.about-paragraph h1, about-paragraph h2, 
+.about-paragraph h3, .about-paragraph h4, 
+.about-paragraph h5, .about-paragraph h6 {
+    font-family: IndustryInc-Base;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding-bottom: 28px;
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+.about-paragraph h1 {
+    font-size: 32px;
+}
+
+.about-paragraph h2 {
+    font-size: 29px;
+}
+
+.about-paragraph h3 {
+    font-size: 26px;
+}
+
+.about-paragraph h4 {
+    font-size: 23px;
+}
+
+.about-paragraph h5 {
+    font-size: 20px;
+}
+
+.about-paragraph h6 {
+    font-size: 17px;
+}
+
+.about-paragraph h2 {
+    font-size: 27px;
+}
+
+.about-paragraph ul {
+    padding-left: 50px;
+}
+
+.about-paragraph li, p {
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+.about-paragraph ul li {
+    list-style-image: url(//byrb.s3.amazonaws.com/static/img/dots.png);
+}
+
+.float-img img {
+    float: left;
+    width: 40%;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.left-side {
+    margin-left: 30px;
+}
+
+.right-side {
+    margin-right: 30px;
+}
+
+.affiliates>div {
+    display: inline-block;
+    position: relative;
+    top: 100%;
+}
+
+.about-paragraph .below-images {
+    margin-top: 15px;
+}
+
+.about-paragraph .below-images p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.about-paragraph .below-images a {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 22px;
+    text-decoration: none;
+}
+
+.about-paragraph .below-images a:hover {
+    background-color: rgba(0, 0, 0, 0.73);
+}

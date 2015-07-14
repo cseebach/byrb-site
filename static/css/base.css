@@ -1,0 +1,302 @@
+.transparent-bg {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.transparent-bg-double {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.relative {
+    position: relative;
+}
+
+.black-tab {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 0 0 5px 5px;
+    border: 1px solid #c0c0c0;
+    border-top-width: 0;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 0%;
+}
+
+.black-tab a {
+    color: #000;
+}
+
+/*.home-header{*/
+/*color: #d0d0d0;*/
+/*background: rgba(60, 60, 60, 0.7);*/
+/*padding: 3px 3px 0 0;*/
+/*margin: 0;*/
+/*border: #000 solid;*/
+/*border-width: 0 1px;*/
+/*margin-bottom: 0px;*/
+/*}*/
+
+/*.home-header h1,h2,h3,h4,h5,h6{*/
+/*margin: 3px 3px 0 0;*/
+/*padding: 0;*/
+/*}*/
+
+.cart-number {
+    background-color: #4060cc;
+    color: #dff0d8;
+    padding: 5px;
+    border-radius: 7px;
+    font-size: 1.7em;
+}
+
+/*.top-bar div span{*/
+/*vertical-align: middle;*/
+/*display: inline-block;*/
+/*}*/
+
+.sign-in {
+    color: #121212;
+    font-size: 1.7em;
+    margin-left: 20px;
+}
+
+.sign-in:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.glyphicon-shopping-cart {
+    margin-right: 15px;
+}
+
+.social-icons {
+    margin-right: 13px;
+    /*background-color: #222;*/
+    /*border-radius: 5px;*/
+}
+
+.social-icons img {
+    display: inline;
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons img.smaller{
+    height: 28px;
+    width: 28px;
+}
+
+.social-icons span {
+    display: inline;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.home-header h1 {
+    font-size: 62px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-width: 1px;
+}
+
+.img-rounded {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+p, a, h1, h2, h3, h4, h5, h6, li {
+    font-family: "league_gothicregular";
+}
+
+nav a {
+    font-family: "league_gothicregular";
+    font-size: 1.7em;
+}
+
+/* Changing Navigation Bar Opacity*/
+.navbar {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.btn {
+    font-size: 1.5em;
+}
+
+/*To Change background look here!*/
+
+body {
+    background: #000 url('/static/img/bg/black.jpg') top center no-repeat fixed;
+}
+
+.below-carousel {
+    padding-top: 15px;
+}
+
+.carousel-inner, .carousel-control {
+    border-radius: 5px;
+}
+
+/*.btn {*/
+/*width: 100%;*/
+/*background-color: rgba(60, 60, 60, 0.7);*/
+/*border: none;*/
+/*border-radius: 0 12px 0 12px;*/
+/*font-size: 30px;*/
+/*letter-spacing: 1px;*/
+/*font-family: sans-serif;*/
+/*box-shadow: 3px 3px 3px #111;*/
+/*text-decoration: underline;*/
+/*}*/
+
+.carousel .btn {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    border-radius: 0 12px 0 12px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    box-shadow: 3px 3px 3px #111;
+    text-decoration: none;
+}
+
+.logo {
+    padding: 5px;
+}
+
+#footer {
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer p {
+    text-align: center;
+    font-size: 10px;
+    color: #778;
+    font-family: sans-serif;
+}
+
+.AlternateGothic {
+    font-family: AlternateGothicLT-No3;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.IndustryInc {
+    font-family: IndustryInc-Base;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.LeagueGothic {
+    font-family: league_gothicregular;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.post h2 {
+    font-size: 4em;
+}
+
+.post p {
+    font-size: 2em;
+}
+
+.post video {
+    padding-top: 1em;
+}
+
+.post {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px 0;
+    margin: 7px 0;
+    box-shadow: 5px 5px 5px #000;
+    color: #111;
+}
+
+.social {
+    background-color: rgba(255, 255, 255, .7);
+    margin-top: 3px;
+    padding: 0 4px;
+    border-radius: 8px;
+    font-size: 1.4em;
+    color: #222;
+}
+
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.7);
+    /*margin-top: 3px;*/
+    margin: 0;
+    /*padding: 0 4px;*/
+    font-size: 1.4em;
+    color: #222;
+}
+
+#video-of-the-week {
+    color: #028ade;
+}
+
+#video-of-the-week:hover, #video-of-the-week.active {
+    background-color: #333;
+}
+
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+}
+
+#sign-in {
+    color: #aaa;
+    font-size: 24px;
+    font-family: league_gothicregular;
+}
+
+.top-bar {
+    height: 52px;
+}
+
+#top-bar {
+    position: relative;
+    top: 8px;
+    height: 40px;
+}
+
+#logo {
+    position: relative;
+    left: 2px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+a {
+    color: #028ade;
+    font-family: sans-serif;
+}
+
+.spacer-xs{
+    height: 10px;
+}
+
+.spacer-s{
+    height: 20px;
+}
+
+.spacer-m{
+    height: 30px;
+}
+
+.transparent-gray-bg{
+    background-color: rgba(80, 80, 80, 0.3);
+}
+
+.yellow-text{
+    color: #ffcd00;
+}
+
+/*.glow{*/
+/*box-shadow: 0 0 100px 20px #fff;*/
+/*}*/

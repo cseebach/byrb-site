@@ -1,0 +1,276 @@
+#top-bar {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    left: 10%;
+}
+
+.screen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.screen video {
+    width: 100%;
+}
+
+.panel{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 1px;
+    padding: 5px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.0980392);
+    border-bottom-color: rgba(0, 0, 0, 0.247059);
+    box-shadow: rgba(2, 138, 222, 1) 0px 1px 0px 0px inset, rgba(2, 138, 222, 1) 0px 1px 2px 0px;
+}
+
+.sci-fi{
+    color: #f63;
+    font-family: orbitronregular;
+}
+
+.spacer-m {
+    height: 20px;
+}
+
+.row-fix-margin{
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+#full-disclaimer p{
+    font-family: 'Open Sans';
+    font-size: 15px;
+}
+
+#all-injuries {
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+    
+    opacity: 1;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    width: 25%;
+    z-index: 40;
+}
+
+#all-injuries.ng-hide-add,
+#all-injuries.ng-hide-remove {
+  display:block!important;
+}
+
+#all-injuries.ng-hide {
+  left: -35%;
+}
+
+#hovered-injuries {
+    -webkit-transition:all ease 0.5s;
+    transition:all ease 0.5s;
+    
+    opacity: 1;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    width: 25%;
+    z-index: 40;
+}
+
+#hovered-injuries.ng-hide-add,
+#hovered-injuries.ng-hide-remove {
+  display:block!important;
+}
+
+#hovered-injuries.ng-hide {
+  left: -35%;
+}
+
+
+#right-info {
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    width: 25%;
+    z-index: 40;
+}
+
+.less-padding {
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.injury-button {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font-family: IndustryInc-Base;
+    font-size: 9pt;
+    font-weight: normal;
+    margin: 2px;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.0980392);
+    border-bottom-color: rgba(0, 0, 0, 0.247059);
+    box-shadow: rgba(2, 138, 222, 1) 0px 1px 0px 0px inset, rgba(2, 138, 222, 1) 0px 1px 2px 0px;
+}
+
+@media screen and (max-width: 1280px) {
+    #top-bar{
+        font-size: .73em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .injury-button{
+       font-size: 7pt 
+    }
+    #top-bar{
+        font-size: .5em;
+    }
+}
+
+
+
+.injury-button:hover, .injury-button.active {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: #222;
+}
+
+.injury-info h1, .injury-info h2, .injury-info h3 {
+    font-family: ORBITRONREGULAR;
+    color: #f63;
+}
+
+.injury-info h1 {
+    font-size: 28px;
+}
+
+.injury-info h2 {
+    font-size: 25px;
+}
+
+.injury-info h3 {
+    font-size: 22px;
+}
+
+.injury-info p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.injury-info em {
+    font-family: ORBITRONREGULAR;
+    font-style: normal;
+    color: #fff;
+}
+
+.injury-info ul li {
+    list-style-image: url("//byrb.s3.amazonaws.com/static/img/dots.png");
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.injury-info a {
+    color: #f63;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.injury-info a:hover {
+    color: #fff;
+}
+
+.instructions h3{
+    font-size: 25px;
+}
+
+.instructinons h4{
+    font-size: 21px;
+}
+
+.instructions h3, .instructions h4, .instructions p{
+    color: #f63;
+    font-family: ORBITRONREGULAR;
+    text-align: center;
+}
+
+.instructions li{
+    color: #ddf;
+    font-size: 16px;
+    font-family: ORBITRONREGULAR;
+    font-weight: 300;
+    text-shadow: #f63 1px 1px;
+}
+
+.fade {
+    -webkit-transition: 1.0s linear opacity;
+    transition: 1.0s linear opacity;
+
+    opacity: 0;
+}
+
+.fade.done {
+    opacity: 1.0;
+}
+
+.disclaimer {
+    margin-top: 12px;
+}
+
+.disclaimer p{
+    color: #32aafe;
+    font-family: "Open Sans";
+}
+
+.disclaimer-link {
+    color: #F63;
+}
+
+#whiteout{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 6000;
+}
+
+#full-disclaimer{
+    position: fixed;
+    width: 30%;
+    left: 35%;
+    top: 25%;
+    z-index: 6001;
+}
+
+body{
+    background: #000;
+}
+
+.size-alert{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #028ade;
+    z-index: 4000;
+}
+
+.size-alert h3{
+    color: #fff;
+}
+

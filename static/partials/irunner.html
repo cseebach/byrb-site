@@ -1,0 +1,79 @@
+<div fit-to-screen ng-style="fitStyle">
+    <div id="hovered-injuries" ng-show="hoveredInjuries" class="fade" ng-class="fadeClass">
+        <h4 class="text-center sci-fi">YOU MIGHT BE SUFFERING FROM:</h4>
+
+        <div class="row row-fix-margin">
+            <div class="col-xs-12 less-padding" ng-repeat="injury in hoveredInjuries">
+                <a class="injury-button" ng-class="injuryButtonClass"
+                   ng-click="changeSelection(injury)">{{ injury.name }}</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="all-injuries" ng-hide="hoveredInjuries" class="fade" ng-class="fadeClass">
+        <h4 class="text-center sci-fi">INTERACTIVE RUNNER INJURY TABLE</h4>
+
+        <div class="row row-fix-margin">
+            <div class="col-xs-6 less-padding">
+                <a class="injury-button" ng-repeat="injury in injuriesOne"
+                   ng-click="changeSelection(injury)">{{ injury.name }}</a>
+            </div>
+            <div class="col-xs-6 less-padding">
+                <a class="injury-button" ng-repeat="injury in injuriesTwo"
+                   ng-click="changeSelection(injury)">{{ injury.name }}</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="right-info">
+        <div class="injury-info panel" ng-class="selectedInjuryClass" ng-bind-html="selectedInjury.copy"
+             ng-show="selectedInjury">
+        </div>
+        <div ng-hide="selectedInjury">
+            <div class="instructions panel" ng-bind-html="instructions">
+                <ol>
+                    <li>Diagnose and prevent common running injuries using the Interactive Runner.</li>
+                    <li>Use the table on the left to click on the name of your injury.</li>
+                    <li>If you don't know your injury's name, click on the part of the body where you hurt.</li>
+                    <li>Next, a list of injuries will appear.</li>
+                    <li>Click on injuries until you find one that matches your symptoms.</li>
+                </ol>
+            </div>
+            <div>
+                <div class="disclaimer" ng-bind-html="mini_disclaimer"></div>
+                <p class="text-center"><a class="disclaimer-link" ng-click="openDisclaimer()">FULL DISCLAIMER - CLICK
+                    HERE</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="whiteout" ng-show="disclaimer">
+
+    </div>
+
+    <div id="full-disclaimer" class="panel" ng-show="disclaimer">
+        <div ng-bind-html="full_disclaimer">
+
+        </div>
+        <a class="injury-button" ng-click="closeDisclaimer()">OK</a>
+    </div>
+
+
+    <video id="figureVideo" autoplay preload loop class="fade" ng-class="videoClass" ng-click="videoClicked()" width="100%">
+        <source src="/static/video/rotating_cut.mp4" type="video/mp4">
+        <source src="/static/video/rotating_cut.webm" type="video/webm">
+        <source src="/static/video/rotating_cut.ogv" type="video/ogv">
+    </video>
+
+    <div class="highlights">
+        <ir-highlight highlight="highlight" ng-repeat="highlight in selectedInjury.highlights"></ir-highlight>
+    </div>
+
+    <ir-highlight-hover-area injuries="injuries" clicked-anywhere="clickedAnywhere" selected="selectedInjury"
+                             ng-click="changeSelection(null)" hv-injuries="hoveredInjuries"></ir-highlight-hover-area>
+
+
+    <!--<div class="size-alert hidden-lg">
+        <h3 class="text-center" ng-bind-html="mobile_alert"></h3>
+    </div>-->
+</div>

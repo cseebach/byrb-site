@@ -1,0 +1,63 @@
+<div class="row">
+    <div class="col-xs-4 col-sm-12">
+        <div class="row">
+            <div class="col-sm-3">
+                <h4 class="text-center sci-fi">INTERACTIVE RUNNER INJURY TABLE</h4>
+
+                <a class="injury-button" ng-repeat="injury in injuries"
+                   ng-click="changeSelection(injury)">{{ injury.name }}</a>
+            </div>
+
+            <div class="col-sm-6">
+
+            </div>
+
+            <div class="col-sm-3">
+                <h4 class="text-center sci-fi">CONTROLS</h4>
+                <a class="injury-button" ng-click="playVideo()">Load/Play Model</a>
+                <a class="injury-button" ng-click="pauseVideo()">Pause Model</a>
+
+                <div class="panel injury-info" ng-class="selectedInjuryClass" ng-bind-html="selectedInjury.copy"
+                     ng-show="selectedInjury">
+                </div>
+                <div class="instructions panel" ng-bind-html="instructions" ng-hide="selectedInjury">
+                    <ol>
+                        <li>Diagnose and prevent common running injuries using the Interactive Runner.</li>
+                        <li>Use the table on the left to click on the name of your injury.</li>
+                        <li>If you don't know your injury's name, click on the part of the body where you hurt.</li>
+                        <li>Next, a list of injuries will appear.</li>
+                        <li>Click on injuries until you find one that matches your symptoms.</li>
+                    </ol>
+                </div>
+                <div>
+                    <div class="disclaimer" ng-bind-html="mini_disclaimer"></div>
+                    <p class="text-center"><a class="disclaimer-link" ng-click="openDisclaimer()">FULL DISCLAIMER -
+                        CLICK HERE</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<video id="figureVideo" width="100%" loop autoplay style="position: fixed; top: 0; left: 0; z-index: -1">
+    <source src="/static/video/rotating_cut.mp4" type="video/mp4">
+    <source src="/static/video/rotating_cut.webm" type="video/webm">
+    <source src="/static/video/rotating_cut.ogv" type="video/ogv">
+</video>
+
+<div class="highlights">
+    <ir-highlight highlight="highlight" ng-repeat="highlight in selectedInjury.highlights"></ir-highlight>
+</div>
+
+<div id="whiteout" ng-show="disclaimer">
+
+</div>
+
+<ir-highlight-hover-area injuries="injuries" clicked-anywhere="clickedAnywhere" selected="selectedInjury" ng-click="changeSelection(null)" hv-injuries="hoveredInjuries"></ir-highlight-hover-area>
+
+<div id="full-disclaimer" class="panel" ng-show="disclaimer">
+    <div ng-bind-html="full_disclaimer">
+
+    </div>
+    <a class="injury-button" ng-click="closeDisclaimer()">OK</a>
+</div>
